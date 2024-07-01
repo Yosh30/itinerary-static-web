@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Map from './components/Map';
+import DestinationForm from './components/DestinationForm';
+import { MapProvider } from './contexts/MapContext';
+import Sidebar from './components/ListLoc';
+import './styles/App.css';
+import ListLoc from './components/ListLoc';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MapProvider>
+      <div className="App">
+        {/* <h1>Japaannn Itinerary!!</h1> */}
+        <ListLoc/>
+        {/* <DestinationForm /> */}
+        <Map />
+      </div>
+    </MapProvider>
   );
-}
+};
 
 export default App;

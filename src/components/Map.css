@@ -1,0 +1,8 @@
+.map-cont {
+   width: 100%;
+   height: 97vh;
+};
+
+.map-wrapper {
+    display: flex;
+}

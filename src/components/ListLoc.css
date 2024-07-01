@@ -1,0 +1,108 @@
+/* src/components/ListLoc.css */
+
+.sidebar {
+    width: 480px;
+    background-color: #f4f4f4a1;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    height: 85%;
+    overflow-y: auto;
+    z-index: 1;
+    margin-top: 120px;
+    margin-left: -50px;
+    font-family: 'Calibri', sans-serif;
+    /* transition: transform 0.3s ease; */
+}
+  
+.container-list {
+    /* padding: 10px; */
+    cursor: pointer;
+    font-family: 'Calibri', sans-serif;
+    padding: 5px 10px 10px 10px; 
+}
+  
+.side-nav {
+    list-style: none;
+    padding: 0;
+    /* margin-top: 35px; */
+    font-family: 'Calibri', sans-serif;
+}
+  
+.location-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff9f;
+    border-radius: 4px;
+    width: 400px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 10px 10px 10px ;
+    margin-left: 30px;
+}
+  
+.side-nav .location-item:hover {
+    background-color: #ddd;
+}
+
+.sidebar .top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 2px;
+    padding:20px 5px 20px 10px;
+    width: 483.5px;
+    background-color: #f4f4f4;
+    z-index: 2;
+    font-family: 'Calibri', sans-serif;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar .top-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.sidebar .top-menu ul:hover {
+    text-decoration: underline;
+}
+
+.route-info {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    z-index: 1;
+    font-family: 'Calibri', sans-serif;
+}
+
+.sidebar .input-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 40px;
+    padding:20px 5px 20px 10px;
+    width: 483.5px;
+    background-color: #f4f4f4d0;
+    z-index: 2;
+    font-family: 'Calibri', sans-serif;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar .input-wrap .search-input {
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
